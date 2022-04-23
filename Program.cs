@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 
 namespace Desafio_05
 {
@@ -10,6 +11,29 @@ namespace Desafio_05
             var alunos = new List<Aluno>();
             InserirDadosDeAlunos(alunos);
             var somaDeNotas = SomaNotas(alunos);
+            EscreverCSV(alunos, somaDeNotas);
+            Console.WriteLine("csv gerado com sucesso");
+        }
+
+        private static void EscreverCSV(List<Aluno> alunos, double somaDeNotas)
+        {
+            var linhas = new List<string>();
+            var cabecalho = "nome,idade,nota";
+            foreach (var aluno in alunos)
+            {
+                var linha = aluno.Name + "," + aluno.Idade + "," + aluno.Nota;
+                linhas.Add(linha);
+            }
+
+            using StreamWriter arquivo = new("Alunos.csv");
+            arquivo.WriteLine(cabecalho);
+
+            foreach (string line in linhas)
+            {
+                arquivo.WriteLine(line);
+            }
+
+            arquivo.WriteLine(somaDeNotas);
         }
 
         private static double SomaNotas(List<Aluno> alunos)
@@ -32,7 +56,8 @@ namespace Desafio_05
                 Console.WriteLine("Insira a idade do aluno:");
                 var idadeAluno = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Insira a nota do aluno:");
-                var notaAluno = Convert.ToDouble(Console.ReadLine());
+                var notaAlunoString = Console.ReadLine();
+                var notaAluno = Math.Round(Convert.ToDouble(notaAlunoString), 2);
                 var aluno = new Aluno(nomeAluno, idadeAluno, notaAluno);
                 alunos.Add(aluno);
                 Console.WriteLine("Deseja adicionar mais alunos?");
