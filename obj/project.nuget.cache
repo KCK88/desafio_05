@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "PblyywP8s51RbErJcenWz3U5UDynZRi2xp5pzdpaGoWYysT28c2i0V/pnN1Te/eCEHEoSbRuX8MKN+eAzQQdSA==",
+  "success": true,
+  "projectFilePath": "D:\\_Ubuntu\\Desafio_05\\Desafio_05.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kck88\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.16\\microsoft.netcore.app.host.win-x64.5.0.16.nupkg.sha512"
+  ],
+  "logs": []
+}

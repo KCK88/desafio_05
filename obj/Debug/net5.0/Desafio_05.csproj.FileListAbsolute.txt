@@ -1,0 +1,16 @@
+D:\_Ubuntu\Desafio_05\bin\Debug\net5.0\Desafio_05.exe
+D:\_Ubuntu\Desafio_05\bin\Debug\net5.0\Desafio_05.deps.json
+D:\_Ubuntu\Desafio_05\bin\Debug\net5.0\Desafio_05.runtimeconfig.json
+D:\_Ubuntu\Desafio_05\bin\Debug\net5.0\Desafio_05.runtimeconfig.dev.json
+D:\_Ubuntu\Desafio_05\bin\Debug\net5.0\Desafio_05.dll
+D:\_Ubuntu\Desafio_05\bin\Debug\net5.0\Desafio_05.pdb
+D:\_Ubuntu\Desafio_05\obj\Debug\net5.0\Desafio_05.csproj.AssemblyReference.cache
+D:\_Ubuntu\Desafio_05\obj\Debug\net5.0\Desafio_05.GeneratedMSBuildEditorConfig.editorconfig
+D:\_Ubuntu\Desafio_05\obj\Debug\net5.0\Desafio_05.AssemblyInfoInputs.cache
+D:\_Ubuntu\Desafio_05\obj\Debug\net5.0\Desafio_05.AssemblyInfo.cs
+D:\_Ubuntu\Desafio_05\obj\Debug\net5.0\Desafio_05.csproj.CoreCompileInputs.cache
+D:\_Ubuntu\Desafio_05\obj\Debug\net5.0\Desafio_05.dll
+D:\_Ubuntu\Desafio_05\obj\Debug\net5.0\refint\Desafio_05.dll
+D:\_Ubuntu\Desafio_05\obj\Debug\net5.0\Desafio_05.pdb
+D:\_Ubuntu\Desafio_05\obj\Debug\net5.0\Desafio_05.genruntimeconfig.cache
+D:\_Ubuntu\Desafio_05\obj\Debug\net5.0\ref\Desafio_05.dll
