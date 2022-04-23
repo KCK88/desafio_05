@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Desafio_05
 {
@@ -6,18 +7,42 @@ namespace Desafio_05
     {
         static void Main(string[] args)
         {
-            // criar uma lista de aluno
-            // criar um while true, pegar dados dentro dele
-            // -- escrever: insira nome do aluno
-            // -- pegar nome
-            // -- escrever: insira idade do aluno
-            // -- pegar idade e converter para int
-            // -- escrever: insira nota do aluno
-            // -- pegar nota e converter para double
-            // -- adicionar aluno na lista
-            // -- escrever: quer colocar mais alunosÇ 1 para sim e 2 para nao
-            // -- se for 2, usar comando break
-            // fim do while
+            var alunos = new List<Aluno>();
+            InserirDadosDeAlunos(alunos);
+            var somaDeNotas = SomaNotas(alunos);
+        }
+
+        private static double SomaNotas(List<Aluno> alunos)
+        {
+            double somaDeNotas = 0;
+            foreach (var aluno in alunos)
+            {
+                somaDeNotas += aluno.Nota;
+            }
+
+            return somaDeNotas;
+        }
+
+        private static void InserirDadosDeAlunos(List<Aluno> alunos)
+        {
+            while (true)
+            {
+                Console.WriteLine("Insira o nome do aluno:");
+                var nomeAluno = Console.ReadLine();
+                Console.WriteLine("Insira a idade do aluno:");
+                var idadeAluno = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Insira a nota do aluno:");
+                var notaAluno = Convert.ToDouble(Console.ReadLine());
+                var aluno = new Aluno(nomeAluno, idadeAluno, notaAluno);
+                alunos.Add(aluno);
+                Console.WriteLine("Deseja adicionar mais alunos?");
+                Console.WriteLine("1 para sim e 2 para não.");
+                var final = Convert.ToInt32(Console.ReadLine());
+                if (final == 2)
+                {
+                    break;
+                }
+            }
         }
     }
 }
